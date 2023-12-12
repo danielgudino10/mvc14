@@ -1,0 +1,34 @@
+[
+    {
+        "food_name": "Chicken breast (boneless, skinless, roasted, 3 ounces)",
+        "calorie_amount": 142
+    },
+    {
+        "food_name": "Corn (canned, sweet yellow whole kernel, drained, 1 cup)",
+        "calorie_amount": 180
+    },
+    {
+        "food_name": "Ground beef patty (15 percent fat, 4 ounces, pan-broiled)",
+        "calorie_amount": 193
+    },
+    {
+        "food_name": "Mixed nuts (dry roasted, with peanuts, salted, 1 ounce)",
+        "calorie_amount": 168
+    },
+    {
+        "food_name": "Oatmeal (plain, cooked in water without salt, 1 cup)",
+        "calorie_amount": 147
+    },
+    {
+        "food_name": "Orange juice (frozen concentrate, made with water, 8 ounces)",
+        "calorie_amount": 112
+    },
+    {
+        "food_name": "Pork chop (center rib, boneless, broiled, 3 ounces)",
+        "calorie_amount": 221
+    },
+    {
+        "food_name": "Spaghetti sauce (marinara, ready to serve, 4 ounces)",
+        "calorie_amount": 92
+    }
+]

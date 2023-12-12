@@ -1,19 +1,14 @@
-<main class="container mt-5">
-  <h1 class="mb-4 text-white">Chess Blog Posts</h1>
-  <div class="row">
-    {{#each posts}}
-      <div class="col-md-4">
-        <div class="card mb-3">
-          <div class="card-header bg-warning">
-            <h2 class="card-title">
-              <a href="/post/{{id}}" class="text-dark">{{title}}</a>
-            </h2>
-          </div>
-          <div class="card-body text-dark">
-            <p>Created by: {{user.username}} Date: {{format_date createdAt}}</p>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/content.css">
+</head>
+<body>
+    <div class="mainTitle">
+        <h1>macroBlog</h1>
+        <div>
+            <button><a href="/profile">start!</a></button>
         </div>
-      </div>
-    {{/each}}
-  </div>
-</main>
+    </div>
+</body>
+</html>

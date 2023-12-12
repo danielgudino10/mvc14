@@ -1,25 +1,26 @@
-<main class="container mt-5">
-  <h1 class="mb-4">Login</h1>
-  <form class="chess-login-form">
-    <div class="mb-3">
-      <label for="username" class="form-label">Username</label>
-      <input
-        type="text"
-        class="form-control"
-        id="username-chess-login"
-        placeholder="Username"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="password" class="form-label">Password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="password-chess-login"
-        placeholder="Password"
-      />
-    </div>
-    <button type="submit" class="btn btn-primary">Log In</button>
-  </form>
+<div class="wrapper">
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
 
-</main>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form id="login-form" action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </span>
+                <input id="email-login" type="email" required>
+                <label>EMAIL</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                <input id="password-login" type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit" class="btn">Login
+            </button>     
+        </form>
+    </div>
+</div>
+
+<script src="/js/login.js"></script>

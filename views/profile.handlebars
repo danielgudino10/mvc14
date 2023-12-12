@@ -1,0 +1,26 @@
+<div class="container" data-aos="fade-up">
+  <div class="row">
+    <div class="col-6 delete-item">
+      {{#each calorieInputs as |calorieInput| }}
+      <div class="row bg-secondary my-3 text-white">
+        <div class=" col-sm-8">
+          <h3>{{calorieInput.food_name}}</h3>
+          <p>Rating: {{calorieInput.calorie_amount}}</p>
+          <p>{{format_date calorieInput.date_created}}</p>
+        </div>
+        <div class="col-sm-2">
+          <button data-id="{{calorieInput.id}}" class="pb-1">Delete</button>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="col-6">
+      <h1>feedback</h1>
+      <input type="text" id="food_name" />
+      <h1>rate</h1>
+      <input type="text" id="calorie_amount" />
+      <button id="calorieSubmit">submit</button>
+    </div>
+  </div>
+</div>
+<script src="js/profile.js"></script>

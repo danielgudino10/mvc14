@@ -1,30 +1,13 @@
-// Import the necessary models
-const User = require("./User");
-const Post = require("./Post");
-const Comment = require("./Comment");
-// Define the relationships between the models
-User.hasMany(Post, {
-  foreignKey: "user_id", // Set up the foreign key relationship
+const User = require('./User');
+const CalorieInput = require('./CalorieInput');
+
+User.hasMany(CalorieInput, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
 });
 
-Post.belongsTo(User, {
-  foreignKey: "user_id", // Set up the foreign key relationship
+CalorieInput.belongsTo(User, {
+  foreignKey: 'user_id'
 });
 
-Comment.belongsTo(User, {
-  foreignKey: "user_id", // Set up the foreign key relationship
-});
-
-Comment.belongsTo(Post, {
-  foreignKey: "post_id", // Set up the foreign key relationship
-});
-
-Post.hasMany(Comment, {
-  foreignKey: "post_id", // Set up the foreign key relationship
-});
-
-User.hasMany(Comment, {
-  foreignKey: "user_id", // Set up the foreign key relationship
-});
-// Export the models
-module.exports = { User, Post, Comment };
+module.exports = { User, CalorieInput };
